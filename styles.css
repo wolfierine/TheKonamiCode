@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  background-color: #93b6c8;
+  padding: 20px 25px;
+  margin-bottom: 50px;
+}
+header .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.website-name{
+  margin: 0;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: white;
+}
+.cat-head img{
+  width: 150px;
+  height: auto;
+  margin: 0 50px;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
+.cat-head-1{
+  animation: rotate 2s ease infinite;
+}
+
+.box-full-of-cats{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.kitty{
+  margin: 30px 0;
+}
+.cat-image{
+  height: 350px;
+  width: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: flex;
+}
+#secret-data-box{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+}
+#secret-data-box li{
+  border-bottom: 1px solid #000;
+  padding: 20px 10px 30px;
+  font-family: sans-serif;
+  color: #353030;
+}
+#secret-data-box li:last-child{
+  border-bottom: none;
+}
+#secret-data-box li span{
+  display: block;
+}
+#secret-data-box li span.issue-name{
+  font-size: 26px;
+  color: #93b6c8;
+}
+#secret-data-box li span.issue-author{
+  font-size: 20px;
+}
